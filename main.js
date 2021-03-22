@@ -55,11 +55,11 @@ $(document).ready(function () {
 
 
 
-    if (plata >= 100000) {
+    if (plata >100001) {
 
         alert("solo podemos prestarte hasta $100.000")
     }
-    if (edad == this.checked && plata != null && plata <= 100000 && cuota != null) {
+    if (edad == this.checked && plata != null && plata <100001 && cuota != null) {
         var invisible = $("#boton");
         var visible = $("#modalon");
         var interes_cuota = 3.75;
