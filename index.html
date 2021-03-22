@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préstamos Ya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.typekit.net/aja6ewo.css">
+</head>
+
+<body>
+    <!-- inicio header  -->
+    <header>
+
+        <div class="container" id="header">
+
+            <div class="row">
+
+                <div class="col-6">
+
+                    <h1 id="title"><img id="logo" src="/images/logo22.png" alt="">Préstamos Ya</h1>
+
+                </div>
+
+                <div class="col-6">
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- fin header -->
+
+    <!-- comienzo main -->
+    <main>
+
+        <div class="container" id="primermain">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <h5 id="text">Obtené tu préstamo hasta $100.000. Obtenélo en 3 pasos, 100% online.</h5>
+
+                </div>
+
+                <div class="col-12" id="pasos">
+
+                    <h6><span id="number">1-</span> Simulá monto y cuotas</h6>
+                    <h6><span id="number">2-</span> Una vez simulado , da click en SOLICITAR y completá los datos</h6>
+                    <h6><span id="number">3-</span> Esperá la acreditación en menos de 24 hs</h6>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="container" id="segundomain">
+
+            <div class="row">
+
+                <div class=" col-md-6 col-lg-6 col-xl-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12"> <img id="icono1" src="/images/icono1.jpg" alt=""></div>
+                        </div>
+
+                        <p class="text"><img src="/images/viñeta.png" alt="" srcset=""> Para remodelar o equipar tu
+                            casa,
+                            emprender un negocio o lo que te propongas. ¡Concretá tu proyecto con <strong>la
+                                financiación
+                                más conveniente!&nbsp;&nbsp;</strong> </p>
+                        <p class="text"><img src="/images/viñeta.png" alt="" srcset=""> Comenzá a disfrutar de tu
+                            préstamo
+                            ahora y pagalo <strong>en hasta 24 cuotas.</strong></p>
+                        <p class="text"><img src="/images/viñeta.png" alt="" srcset=""> La solicitud es <strong>100%
+                                online</strong> , y se acredita inmediatamente. Además, definís el monto y el plazo que
+                            más
+                            te convenga.&nbsp;&nbsp;</p>
+                        <p class="text"><img src="/images/viñeta.png" alt="" srcset=""> Tenés la posibilidad de
+                            <strong>cancelarlo anticipadamente</strong> cuando quieras, en forma total o
+                            parcial.&nbsp;&nbsp;</p>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+                <div id="form" class=" col-md-6 col-lg-6 col-xl-6">
+
+                    <form name="form" action="">
+
+                        <h3>Simulá tu préstamo en pesos </h3>
+
+                        <label for=""> <strong>Monto</strong> <br><input id="plata" type="number" placeholder="$"
+                                required></label>
+                        <br>
+                        <label for=""> <strong>Cuotas</strong>
+                            <br>
+                            <select id="opciones" required name="option" id="">Cuotas
+                                <option selected value=""></option>
+                                <option value="6">6</option>
+                                <option value="12">12</option>
+                                <option value="18">18</option>
+                                <option value="24">24</option>
+                            </select>
+                        </label>
+                        <br>
+                        <br>
+
+                        <input required id="edad" name="miCheck" type="checkbox"> <label for="">Soy mayor de 18
+                            años</label>
+                        <br>
+                        <br>
+                        <br>
+                        <button type="submit"  id="boton">Simular</button> <button type="button" id="modalon"
+                            class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Solicitar
+                        </button>
+                        <br>
+                        <br>
+                        <br>
+
+
+                        <div id="resultado" class="container">
+
+                            <p id="montofinal"></p>
+                            <p id="cuotasfinal"></p>
+
+
+
+                            <!-- aca iria el resultado una vez completados los datos y enviados a traves del boton  -->
+
+
+
+                            <!-- datos financieros -->
+                    </form>
+                    <!-- Modal -->
+                    <div>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ya casi es tuyo, completá los
+                                            datos</h5>
+                                        <button type="button" id="modalclose" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div class="container">
+                                            <form id="form2" action="/public/index2.html">
+                                                <div class="row">
+
+                                                    <div class="col-12">
+                                                        <label for="">Apellido</label>
+                                                        <input id="apellido" type="text"required>
+                                                        <label for="">Nombre</label>
+                                                        <input id="nombre" type="text"required>
+                                                        <label for=""> N° DNI ( sin puntos)</label>
+                                                        <input id="dni" type="number"required>
+                                                        <label for="">Mail</label>
+                                                        <input id="mail" type="email"required>
+                                                        <label for="">Dirección</label>
+                                                        <input id="direccion" type="text"required>
+                                                        <label for="">Teléfono</label>
+                                                        <input id="telefono" type="number"required>
+                                                        <label for="">CUIT/CUIL (sin guiones)</label>
+                                                        <input id="afip" type="number"required>
+                                                        <label for="">N° de CBU (sin puntos)</label>
+                                                        <input id="cbu" type="number"required>
+
+                                                        <input id="ajax" type="button">
+                                                        <label for=""> CFT ( costo financiero total) </label>
+                                                        <p id="res"></p>
+
+                                                    <div class="row">
+
+                                                    <div class="col-6">
+                                                        <input id="modalboton1" type="reset" value="Cancelar">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <input id="modalboton2" type="submit" value="Confirmar">
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--FIN Modal -->
+
+    </main>
+    <!-- fin main -->
+
+
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

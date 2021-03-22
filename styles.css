@@ -1,0 +1,233 @@
+/*estilos header */
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: muli, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}   
+
+header{background-color:#C4161C  ;
+    
+}
+#header{
+
+    background-color: #C4161C ;
+    width: 100vw  !important;
+    height: 8em;
+}
+
+@media(max-width:840px){
+
+    #header{
+
+        height: 13em;
+    }
+}
+
+
+
+
+#title{
+    color: whitesmoke;
+    font-size: 1.4em;
+    margin-top: 1em;
+    
+}
+ /*fin estilos header*/
+
+
+ /*estilos primer main*/
+
+#text{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+ #pasos{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 1em;
+
+
+ }
+ #number{
+
+    color: #C4161C;
+    font-size: 1.5em;
+     
+ }
+
+/*fin estilos primer main */
+ 
+/* estilos segundo main*/
+
+#segundomain{
+
+    margin-top: 3em;
+    height: 100%;
+}
+
+#segundomain .text{
+
+    color:#757575 ;
+}
+
+#icono1{
+    margin-bottom: 5em;
+    height: auto !important;
+    width: 100% !important;
+    margin: 20px auto !important;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+}
+
+/*estilos form*/
+#form{
+    background-color: #ededed;
+    margin-top:2em;
+    text-align: center;
+    background-color: #ededed;
+    color: #757575;
+   
+}
+
+
+form h3{
+
+    color: black;
+    font-family: sans-serif;
+    margin-bottom: 2em;
+}
+
+#plata, #opciones {
+    background-color: #ededed !important;
+    color: black;
+    font-weight: 12em;
+    margin: 0.8em;
+}
+#edad + label{
+    font-weight: 500;
+}
+#edad:checked + label{
+    color: #C4161C;
+    
+    }
+
+#boton{
+    background-color: #C4161C;
+    font-weight: 500;
+    width:7em;
+    border-radius: 2em;
+}
+
+#boton:hover{
+    color:whitesmoke;
+}
+
+#montofinal, #cuotasfinal{
+
+    font-size: 2em;
+    color: black;
+
+
+}
+
+
+/*fin estilos form*/
+
+
+/* estilos modal */
+
+#modalon{
+
+    background-color: #C4161C;
+    border: none;
+    display: none;
+}
+
+#form2 input{
+
+    width: 100%;
+    font-weight: 600;
+    border-radius: 0.5em;
+
+}
+
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+ 
+
+input[type=number] {
+
+    -moz-appearance:textfield;
+
+}
+
+#modalboton1{
+
+    background-color: #C4161C;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 0.3em!important;
+    margin-top: 3em;
+    border-radius: 1.5em;
+    width: 8em!important;
+
+   
+
+}
+
+#modalboton2{
+
+    background-color:#61b15a;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 0.3em!important;
+    margin-top: 3em;
+    border-radius: 1.5em;
+    width: 8em!important;
+    
+}
+
+#ajax{
+    margin-top: 1em;
+    text-align: center;
+    width: 2em!important;
+    height: 1.5em!important;
+    background-color: #C4161C;
+    
+}
+
+
+
+.modal-content{
+
+    width: 100%!important;
+    height: 800px;
+}
+/*fin estilos modal */
+/*fin estilos segundo main */
+
+
+/* estilos index2*/
+
+#main2 {
+
+    margin-top: 8em;
+
+
+}
