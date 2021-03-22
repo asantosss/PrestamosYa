@@ -108,6 +108,7 @@ form h3{
     color: black;
     font-weight: 12em;
     margin: 0.8em;
+    text-align: center;
 }
 #edad + label{
     font-weight: 500;
